@@ -29,3 +29,16 @@ def unpack_tuple(my_tuple):
 # Example usage of unpacking function
 sample_tuple = ("Python", "AI", "java")
 unpack_tuple(sample_tuple)
+
+
+
+
+output:
+    
+    Cities tuple: ('Tokyo', 'Paris', 'New York', 'Sydney', 'Berlin')
+First and last city: ('Tokyo', 'Berlin')
+Students tuple: (('John', 85), ('Alice', 92), ('Bob', 78), ('Diana', 88))
+Sorted student names: ('Alice', 'Bob', 'Diana', 'John')
+First element: Python
+Second element: AI
+Third element: java
