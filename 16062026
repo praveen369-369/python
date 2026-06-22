@@ -1,0 +1,38 @@
+# Initialize empty dictionary
+user_profiles = {}
+
+# Function to add a new user
+def add_user(user_id, name):
+    user_profiles[user_id] = name
+    print(f"Added: {user_id} -> {name}")
+    print(user_profiles)
+
+# Function to retrieve a user's name
+def get_user(user_id):
+    print(user_profiles.get(user_id, "User ID not found"))
+
+# Function to update a user's name
+def update_user(user_id, new_name):
+    if user_id in user_profiles:
+        user_profiles[user_id] = new_name
+        print(f"Updated: {user_id} -> {new_name}")
+    else:
+        print("User ID not found")
+    print(user_profiles)
+
+# Function to remove a user
+def remove_user(user_id):
+    if user_id in user_profiles:
+        del user_profiles[user_id]
+        print(f"Removed user {user_id}")
+    else:
+        print("User ID not found")
+    print(user_profiles)
+
+# ---- Test the functions ----
+add_user(1, "Alice")
+add_user(2, "Bob")
+get_user(1)          # Should print Alice
+update_user(2, "Bobby")
+remove_user(1)
+get_user(1)          # Should say not found
